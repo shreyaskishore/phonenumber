@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Gradient backgrounds - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+		background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+		background: linear-gradient(#4BBFC3,#7BAABE);
+	}
+
+	#section1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+		background: -webkit-linear-gradient(#7BAABE, #969AC6);
+		background: linear-gradient(#7BAABE,#969AC6);
+	}
+
+	#section2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#969AC6), to(#a78199));
+		background: -webkit-linear-gradient(#969AC6, #a78199);
+		background: linear-gradient(#969AC6,#a78199);
+	}
+
+	#section3{
+		background: -webkit-gradient(linear, top left, bottom left, from(#a78199), to(#8c7465));
+		background: -webkit-linear-gradient(#a78199, #8c7465);
+		background: linear-gradient(#a78199,#8c7465);
+	}
+
+	#section4{
+		background: -webkit-gradient(linear, top left, bottom left, from(#8c7465), to(#a78199));
+		background: -webkit-linear-gradient(#8c7465, #a78199);
+		background: linear-gradient(#8c7465, #a78199);
+	}	
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage();
+			number1changecode();
+			number1changenumber();
+			number3change();
+		});
+	</script>
+
+	<style type="text/css">
+	*{
+		font-family: Lato;
+	}
+	h2, .number{
+		font-size: 40px;
+		color:white;
+		padding: 10px;
+		margin: 0;
+	}
+
+	h2{
+		text-decoration: bold;
+	}
+
+	button{
+		border-style: solid;
+		border-width: 0px 0px 3px;
+		box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+		color: #FFFFFF;	   
+		border-radius: 6px;
+		cursor: pointer;
+		display: inline-block;
+		font-style: normal;
+		overflow: hidden;
+		text-align: center;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		transition: all 200ms ease-in-out 0s;
+		white-space: nowrap;	
+		font-size: 25px;
+		font-weight: 700;	
+		padding: 19px 39px 18px;
+		font-size: 18px;
+		margin: 10px;
+	}
+
+	.btn-blue {
+    border-color: #315d61;
+	background-color: #479096;
+	}
+
+	.btn-blue:hover, .btn-blue:active {
+	    background-color: #315d61;
+	    border-color: #1d373a;    
+	}
+
+	.btn-green {
+    border-color: #2E7D32;
+	background-color: #4CAF50;
+	}
+
+	.btn-green:hover, .btn-green:active {
+	    background-color: #2E7D32;
+	    border-color: #1B5E20;    
+	}
+
+	.btn-red {
+    border-color: #C62828;
+	background-color: #F44336;
+	}
+
+	.btn-red:hover, .btn-red:active {
+	    background-color: #C62828;
+	    border-color: #631414;    
+	}
+	</style>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<!-- <div class="section" id="section1">
+	    <h2 id="message">Choose your phone number</h2>
+		<span class="number" id="number2code"></span><span class="number" id="number2number"></span><br>
+		<script type="text/javascript">
+		rnd = 1;
+		function number2changenumber(){
+			$('#number2number').text(Math.floor(Math.random()*(9999999999-1000000000+1)+100000000));
+		}
+
+		function number2changecode(){
+			$('#number2code').text('+' + (Math.floor(Math.random()*(100)+1)).toString());
+		}
+
+		setInterval((function {if(rnd==1){number2changecode();}), 100);
+		</script>
+		<button class="btn-blue" onclick="rnd=0">Change Country Code</button>
+		<button class="btn-blue" onclick="rnd=1">Reset</button>
+		<button class="btn-green">Submit</button>
+	</div> -->
+	<div class="section " id="section0">
+		<h2 id="message">Choose your phone number</h2>
+		<span class="number" id="number1code"></span><span class="number" id="number1number"></span><br>
+		<script type="text/javascript">
+		function number1changenumber(){
+			$('#number1number').text(Math.floor(Math.random()*(9999999999-1000000000+1)+100000000));
+		}
+
+		function number1changecode(){
+			$('#number1code').text('+' + (Math.floor(Math.random()*(100)+1)).toString());
+		}
+		</script>
+		<button class="btn-blue" onclick="number1changecode()">Change Country Code</button>
+		<button class="btn-blue" onclick="number1changenumber()">Change Number</button>
+		<button class="btn-green">Submit</button>
+		<!-- <span style="float: bottom;">Scroll down for more</span> -->
+	</div>
+	
+	<div class="section" id="section1">
+		<h2 id="message">Choose your phone number</h2>
+		<span class="number" id="number2code"></span><span class="number" id="number2number"></span><br>
+		<script type="text/javascript">
+		framerate = 10;
+
+		randomcode = 1;
+		function number2changecode(){
+			if (randomcode == 1) {	
+				$('#number2code').text('+' + (Math.floor(Math.random()*(100)+1)).toString());
+			};
+		}
+
+		randomnumber = 1;
+		function number2changenumber(){
+			if (randomnumber == 1) {	
+				$('#number2number').text(Math.floor(Math.random()*(9999999999-1000000000+1)+100000000));
+			};
+		}
+
+		window.setInterval(number2changecode ,1000/framerate);
+		window.setInterval(number2changenumber, 1000/framerate);
+		</script>
+		<button class="btn-blue" onclick="randomcode=0;">Set Country Code</button>
+		<button class="btn-blue" onclick="randomnumber=0;">Set Number</button>
+		<button class="btn-red" onclick="randomnumber=1;randomcode=1;">Reset</button>
+		<button class="btn-green">Submit</button>
+	</div>
+
+	<div class="section" id="section2">
+		<h2 id="message">Enter your phone number</h2>
+		<script type="text/javascript">
+		var code3 = 1;
+		var number3 = 1000000000;
+
+		function number3change(){
+			$('#number3number').text(number3);
+			$('#number3code').text('+' + code3.toString());
+		}
+
+		</script>
+		<center>
+		<table style='border:0;'>
+		<tr><td><center><span class="number" id="number3code"></span><td><center><span class="number" id="number3number"></span><br><td><button class="btn-green">Submit</button></tr>
+		<tr><td><center><button class="btn-blue" onclick="code3 = (code3+1)%100; number3change();">+</button><td><center><button class="btn-blue" onclick="number3++; number3change();">+</button>
+</tr>
+		</table>
+		</center>
+
+	</div>
+
+	<div class="section" id="section3">
+		<h2 id="message">Enter your phone number</h2>
+		<span class="number" id="number4code"></span><span class="number" id="number4number"></span><br>
+		<script type="text/javascript">
+		var upper = 9999999999; 
+		var lower = 1000000000; 
+
+		var current = 5000000000; 
+
+		function numberToString(p) {
+		  var sp = "" + p; 
+		  var acc = ""; 
+		  for(var i=0; i < sp.length; i++) {
+		    acc += sp.charAt(i);
+		    if([2, 5].indexOf(i) != -1) {
+		      acc += "-";
+		    }
+		  }
+		  return acc; 
+		}
+
+		function updateDisplay() {
+		  current = Math.floor((upper + lower) / 2); 
+		  $("#number4number").html(numberToString(current)); 
+		}
+
+		function smaller() {
+		  upper = current - 1; 
+		  updateDisplay(); 
+		}
+
+		function bigger() {
+		  lower = current + 1; 
+		  updateDisplay(); 
+		}
+
+		updateDisplay();
+		</script>
+		<button class="btn-blue" onclick="smaller();">Smaller</button>
+		<button class="btn-blue" onclick="bigger();">Bigger</button>
+		<button class="btn-red" onclick="upper=9999999999; lower=1000000000; current=5000000000; updateDisplay();">Reset</button>
+		<button class="btn-green">Submit</button>
+	</div>
+	<div class="section" id="section4" style="background: brown;">
+		<div class="intro">
+			<h1>Feel Free!</h1>
+			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+		</div>
+	</div>
+	<div class="section" id="section5" style="background: black;">
+		<div class="intro">
+			<h1>Feel Free!</h1>
+			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
